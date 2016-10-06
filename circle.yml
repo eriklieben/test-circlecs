@@ -1,4 +1,6 @@
 test:
+  post:
+    - node ./node_modules/vscode/bin/compile
   override:
     - mocha test --reporter mocha-junit-reporter:
         environment:
